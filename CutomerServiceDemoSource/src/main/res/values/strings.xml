@@ -1,0 +1,97 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ApiDemo</string>
+    <string name="res_pack_path">res pack absolute path</string>
+    <string name="text_btn_update_res_pack">updateResPack</string>
+    <string name="text_btn_get_certificate_info">getCertificateInfo</string>
+    <string name="text_btn_get_certificate">getCertificate</string>
+    <string name="text_btn_get_certificate_chain">getCertificateChain</string>
+    <string name="text_btn_factory_reset">factory reset</string>
+    <string name="text_btn_reset_app">Reset app</string>
+    <string name="text_btn_to_sleep">Sleep and delay wake up</string>
+    <string name="text_btn_fto_wakeup">Wakeup</string>
+    <string name="text_btn_add_c1_cert">add c1 cert</string>
+    <string name="text_btn_add_c2_cert">add c2 cert</string>
+    <string name="text_btn_add_c2_sub1_cert">add c2 sub cert 1</string>
+    <string name="text_btn_add_c2_sub2_cert">add c2 sub cert 2</string>
+    <string name="text_btn_add_c2_sub3_cert">add c2 sub cert 3</string>
+    <string name="text_btn_add_c2_sub4_cert">add c2 sub cert 4</string>
+    <string name="get_apn_list">APN List Info</string>
+    <string name="get_current_apn">Get Current APN</string>
+    <string name="slot_index">Slot Index:</string>
+    <string name="text_btn_to_3m_api">Goto 3month api</string>
+    <string name="get_app_usage_info">getAppUsageInfo</string>
+    <string name="calculate_full_charge_time">CalculateFullChargeTime</string>
+    <string name="calculate_usage_percent">CalculateUsagePercent</string>
+
+    <string-array name="apn_slot_index">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="sms_type">
+        <item>ALL</item>
+        <item>INBOX(收件箱)</item>
+        <item>SENT(已成功发送)</item>
+        <item>DRAFT(草稿箱)</item>
+        <item>OUTBOX(发件箱)</item>
+        <item>FAILED(发送失败)</item>
+        <item>QUEUED(队列中的短信)</item>
+
+    </string-array>
+
+    <string-array name="apn_auth_type">
+        <item>NONE</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP OR CHAP</item>
+    </string-array>
+
+    <string-array name="network_type">
+        <item>TYPE_MOBILE</item>
+        <item>TYPE_WIFI</item>
+        <item>ERROR_PARAM_TEST</item>
+    </string-array>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration in days -->
+    <string name="durationDays"><xliff:g id="days">%1$d</xliff:g> days</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one day with hours -->
+    <string name="durationDayHours"><xliff:g id="days">%1$d</xliff:g> day
+            <xliff:g id="hours">%2$d</xliff:g> hrs</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one day with one hours -->
+    <string name="durationDayHour"><xliff:g id="days">%1$d</xliff:g> day
+            <xliff:g id="hours">%2$d</xliff:g> hr</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration in hours -->
+    <string name="durationHours"><xliff:g id="hours">%1$d</xliff:g> hrs</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one hour with minutes -->
+    <string name="durationHourMinutes"><xliff:g id="hours">%1$d</xliff:g> hr
+            <xliff:g id="minutes">%2$d</xliff:g> mins</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one hour with one minute -->
+    <string name="durationHourMinute"><xliff:g id="hours">%1$d</xliff:g> hr
+            <xliff:g id="minutes">%2$d</xliff:g> min</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration in minutes -->
+    <string name="durationMinutes"><xliff:g id="minutes">%1$d</xliff:g> mins</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one minute -->
+    <string name="durationMinute"><xliff:g id="minutes">%1$d</xliff:g> min</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one minute with seconds -->
+    <string name="durationMinuteSeconds"><xliff:g id="minutes">%1$d</xliff:g> min
+            <xliff:g id="seconds">%2$d</xliff:g> secs</string>
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one minute with one second -->
+    <string name="durationMinuteSecond"><xliff:g id="minutes">%1$d</xliff:g> min
+            <xliff:g id="seconds">%2$d</xliff:g> sec</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration in seconds -->
+    <string name="durationSeconds"><xliff:g id="seconds">%1$d</xliff:g> secs</string>
+
+    <!-- [CHAR_LIMIT=10] Suffix added to signify duration of one second -->
+    <string name="durationSecond"><xliff:g id="seconds">%1$d</xliff:g> sec</string>
+
+
+</resources>

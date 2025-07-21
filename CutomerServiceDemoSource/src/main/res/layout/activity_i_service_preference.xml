@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IServicePreferenceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_update_res_pack__res_pack_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ResPackPath" />
+
+            <Button
+                android:id="@+id/bt_update_res_pack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateResPack"
+                android:text="updateResPack"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_res_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getResVer"
+                android:text="getResVer"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_switch_tms_domain_flag_switch_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="switchFlag" />
+
+            <Button
+                android:id="@+id/bt_switch_tms_domain_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="switchTmsDomainFlag"
+                android:text="switchTmsDomainFlag"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

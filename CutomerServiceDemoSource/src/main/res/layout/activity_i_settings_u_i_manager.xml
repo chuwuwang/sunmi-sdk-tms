@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.ISettingsUIManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_set_settings_customed_item_enable_password_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pwd" />
+
+            <Button
+                android:id="@+id/bt_set_settings_customed_item_enable_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSettingsCustomedItemEnablePassword"
+                android:text="setSettingsCustomedItemEnablePassword"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

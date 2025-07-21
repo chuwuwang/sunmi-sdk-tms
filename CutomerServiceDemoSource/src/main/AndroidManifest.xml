@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sunmi.cutomerservicedemosource">
+    <application>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.sunmi.tmsservice.autodemo.IDeviceServiceActivity" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IDeviceInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IDeviceManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.ISoftwareManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.ISystemManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.ISystemUIManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IKioskManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IDeviceRunningInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.ICertificateManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.INetworkManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IPackageCTPAActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IServicePreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.ITelephoneManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IIotInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.IHostManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.ISettingsUIManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sunmi.tmsservice.autodemo.ApnInsertActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

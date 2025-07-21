@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IDeviceServiceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_get_device_info_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDeviceInfoBinder"
+                android:text="getDeviceInfoBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_device_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDeviceManagerBinder"
+                android:text="getDeviceManagerBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_software_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSoftwareManagerBinder"
+                android:text="getSoftwareManagerBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_system_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSystemManagerBinder"
+                android:text="getSystemManagerBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_system_u_i_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSystemUIManagerBinder"
+                android:text="getSystemUIManagerBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_kiosk_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getKioskManagerBinder"
+                android:text="getKioskManagerBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_device_running_info_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDeviceRunningInfoBinder"
+                android:text="getDeviceRunningInfoBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_certificate_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCertificateManagerBinder"
+                android:text="getCertificateManagerBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_network_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getNetworkManagerBinder"
+                android:text="getNetworkManagerBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_all_package_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAllPackageInfo"
+                android:text="getAllPackageInfo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getPreference"
+                android:text="getPreference"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_telephone_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getTelephoneManager"
+                android:text="getTelephoneManager"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_iot_info_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getIotInfoBinder"
+                android:text="getIotInfoBinder"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_host_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getHostManager"
+                android:text="getHostManager"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_settings_u_i_manager_binder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSettingsUIManagerBinder"
+                android:text="getSettingsUIManagerBinder"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

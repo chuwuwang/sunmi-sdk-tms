@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmi.tmsservice.apidemo.API10259Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="---------------New API---------------"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_get_sunmi_os_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getSunmiOSVersion"
+            android:text="Get Sunmi OS Version" />
+
+        <Button
+            android:id="@+id/btn_get_ip_addresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getIPAddresses"
+            android:text="Get IP Addresses" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_enable_nfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/btn_enable_nfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:onClick="enableNFC"
+                android:text="enable NFC" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_brightness_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="brightness mode(0-manual, 1-auto)"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_set_brightness_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setBrightnessMode"
+            android:text="Set Brightness Mode" />
+
+        <EditText
+            android:id="@+id/et_sub_screen_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Please input sub screen brightness"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_set_sub_screen_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setSubScreenBrightness"
+            android:text="Set Sub Screen Brightness" />
+
+        <Button
+            android:id="@+id/btn_get_minimum_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getMinimumBrightness"
+            android:text="Get Minimum Screen Brightness" />
+
+        <Button
+            android:id="@+id/btn_get_maximum_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getMaximumBrightness"
+            android:text="Get Maximum Screen Brightness" />
+
+        <Button
+            android:id="@+id/btn_get_cpu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getCpuName"
+            android:text="Get Cpu Name" />
+
+        <Button
+            android:id="@+id/btn_get_turn_on_mills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getTurnOnMills"
+            android:text="Get Turn On Mills" />
+
+        <Button
+            android:id="@+id/btn_get_cpu_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getCpuTemperature"
+            android:text="Get Cpu Temperature" />
+
+        <Button
+            android:id="@+id/btn_get_cpu_sleep_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getCpuSleepInfo"
+            android:text="Get Cpu Sleep Info" />
+
+        <Button
+            android:id="@+id/btn_get_device_units"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getDeviceUnits"
+            android:text="Get Device Units" />
+
+        <EditText
+            android:id="@+id/et_clear_data_package_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Please input the package name"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_clear_application_user_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearApplicationUserData"
+            android:text="Clear Application User Data" />
+
+    </LinearLayout>
+
+
+</ScrollView>

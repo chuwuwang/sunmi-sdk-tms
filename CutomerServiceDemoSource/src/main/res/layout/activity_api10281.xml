@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmi.tmsservice.apidemo.API10281Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_file_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="file path" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setScreenSaverPicture"
+            android:text="set Screen Saver Picture" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enabled" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableScreenSaver"
+                android:text="enable Screen Saver" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="screen saver time(second)"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setScreenSaverTime"
+            android:text="set Screen Saver Time" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getScreenSaverTime"
+            android:text="get Screen Saver Time" />
+
+    </LinearLayout>
+
+</ScrollView>

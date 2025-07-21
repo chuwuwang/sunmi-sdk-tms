@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IDeviceManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_set_system_time_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="second" />
+
+            <EditText
+                android:id="@+id/et_set_system_time_minute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="minute" />
+
+            <EditText
+                android:id="@+id/et_set_system_time_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hour" />
+
+            <EditText
+                android:id="@+id/et_set_system_time_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="day" />
+
+            <EditText
+                android:id="@+id/et_set_system_time_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="month" />
+
+            <EditText
+                android:id="@+id/et_set_system_time_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="year" />
+
+            <Button
+                android:id="@+id/bt_set_system_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSystemTime"
+                android:text="setSystemTime"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_power_reboot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="powerReboot"
+                android:text="powerReboot"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_shutdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="shutdown"
+                android:text="shutdown"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_time_zone_time_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="timeZone" />
+
+            <Button
+                android:id="@+id/bt_set_time_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setTimeZone"
+                android:text="setTimeZone"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_factory_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="factoryReset"
+                android:text="factoryReset"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_reset_apps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="resetApps"
+                android:text="resetApps"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_to_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toSleep"
+                android:text="toSleep"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_to_wake_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toWakeUp"
+                android:text="toWakeUp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_boot_animation_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="filePath" />
+
+            <Button
+                android:id="@+id/bt_set_boot_animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setBootAnimation"
+                android:text="setBootAnimation"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_bluetooth_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableBluetooth"
+                android:text="enableBluetooth"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_auto_time_type_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <Button
+                android:id="@+id/bt_set_auto_time_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAutoTimeType"
+                android:text="setAutoTimeType"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_custom_key_function_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="key" />
+
+            <EditText
+                android:id="@+id/et_set_custom_key_function_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <EditText
+                android:id="@+id/et_set_custom_key_function_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="value" />
+
+            <Button
+                android:id="@+id/bt_set_custom_key_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setCustomKeyFunction"
+                android:text="setCustomKeyFunction"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_power_button_enabled_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enabled" />
+
+            <Button
+                android:id="@+id/bt_set_power_button_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setPowerButtonEnabled"
+                android:text="setPowerButtonEnabled"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_power_button_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isPowerButtonEnabled"
+                android:text="isPowerButtonEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_system_property_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="key" />
+
+            <EditText
+                android:id="@+id/et_set_system_property_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="value" />
+
+            <Button
+                android:id="@+id/bt_set_system_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSystemProperty"
+                android:text="setSystemProperty"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_g_p_s_is_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="isEnable" />
+
+            <Button
+                android:id="@+id/bt_enable_g_p_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableGPS"
+                android:text="enableGPS"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_w_i_f_i_is_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="isEnable" />
+
+            <Button
+                android:id="@+id/bt_enable_w_i_f_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableWIFI"
+                android:text="enableWIFI"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_lock_device_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_lock_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableLockDevice"
+                android:text="enableLockDevice"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_wallpaper_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="filePath" />
+
+            <Button
+                android:id="@+id/bt_set_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setWallpaper"
+                android:text="setWallpaper"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_airplane_mode_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_airplane_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableAirplaneMode"
+                android:text="enableAirplaneMode"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_airplane_mode_locked_locked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="locked" />
+
+            <Button
+                android:id="@+id/bt_set_airplane_mode_locked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAirplaneModeLocked"
+                android:text="setAirplaneModeLocked"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_switch_device_enable_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_switch_device_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="switchDeviceEnable"
+                android:text="switchDeviceEnable"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_screen_brightness_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="value" />
+
+            <Button
+                android:id="@+id/bt_set_screen_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenBrightness"
+                android:text="setScreenBrightness"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_screen_timeout_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="timeout" />
+
+            <Button
+                android:id="@+id/bt_set_screen_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenTimeout"
+                android:text="setScreenTimeout"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_n_f_c_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_n_f_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableNFC"
+                android:text="enableNFC"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_brightness_mode_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mode" />
+
+            <Button
+                android:id="@+id/bt_set_brightness_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setBrightnessMode"
+                android:text="setBrightnessMode"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_sub_screen_brightness_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="brightness" />
+
+            <Button
+                android:id="@+id/bt_set_sub_screen_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSubScreenBrightness"
+                android:text="setSubScreenBrightness"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_minimum_screen_brightness_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMinimumScreenBrightnessSetting"
+                android:text="getMinimumScreenBrightnessSetting"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_maximum_screen_brightness_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMaximumScreenBrightnessSetting"
+                android:text="getMaximumScreenBrightnessSetting"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_smart_charge_limit_min_factory_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="minFactoryCapacity" />
+
+            <EditText
+                android:id="@+id/et_set_smart_charge_limit_max_factory_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="maxFactoryCapacity" />
+
+            <Button
+                android:id="@+id/bt_set_smart_charge_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSmartChargeLimit"
+                android:text="setSmartChargeLimit"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_open_smart_charge_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="open" />
+
+            <Button
+                android:id="@+id/bt_open_smart_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openSmartCharge"
+                android:text="openSmartCharge"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_device_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isDeviceEnabled"
+                android:text="isDeviceEnabled"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_default_printer_service_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_default_printer_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableDefaultPrinterService"
+                android:text="enableDefaultPrinterService"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_location_enabled_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_set_location_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setLocationEnabled"
+                android:text="setLocationEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_device_owner_pack_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packName" />
+
+            <EditText
+                android:id="@+id/et_set_device_owner_class_full_path_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="classFullPathName" />
+
+            <Button
+                android:id="@+id/bt_set_device_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setDeviceOwner"
+                android:text="setDeviceOwner"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_forbidden_camera_disable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="disable" />
+
+            <Button
+                android:id="@+id/bt_forbidden_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="forbiddenCamera"
+                android:text="forbiddenCamera"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_screen_saver_picture_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="filePath" />
+
+            <Button
+                android:id="@+id/bt_set_screen_saver_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenSaverPicture"
+                android:text="setScreenSaverPicture"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_screen_saver_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_screen_saver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableScreenSaver"
+                android:text="enableScreenSaver"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_screen_saver_time_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="second" />
+
+            <Button
+                android:id="@+id/bt_set_screen_saver_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenSaverTime"
+                android:text="setScreenSaverTime"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_screen_saver_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getScreenSaverTime"
+                android:text="getScreenSaverTime"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_screen_saver_time_with_result_millisecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="millisecond" />
+
+            <Button
+                android:id="@+id/bt_set_screen_saver_time_with_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenSaverTimeWithResult"
+                android:text="setScreenSaverTimeWithResult"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_switch_b_t_module_enable_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_switch_b_t_module_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="switchBTModuleEnable"
+                android:text="switchBTModuleEnable"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_b_t_module_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isBTModuleEnabled"
+                android:text="isBTModuleEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_brightness_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="value" />
+
+            <Button
+                android:id="@+id/bt_set_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setBrightness"
+                android:text="setBrightness"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_system_language_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="language" />
+
+            <Button
+                android:id="@+id/bt_set_system_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSystemLanguage"
+                android:text="setSystemLanguage"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_auto_time_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_auto_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableAutoTime"
+                android:text="enableAutoTime"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_auto_time_zone_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_auto_time_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableAutoTimeZone"
+                android:text="enableAutoTimeZone"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_key_event_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_key_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableKeyEvent"
+                android:text="enableKeyEvent"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_location_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableLocation"
+                android:text="enableLocation"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set24_hour_is24_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="is24Hour" />
+
+            <Button
+                android:id="@+id/bt_set24_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="set24Hour"
+                android:text="set24Hour"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_power_key_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_power_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enablePowerKey"
+                android:text="enablePowerKey"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_power_key_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isPowerKeyEnabled"
+                android:text="isPowerKeyEnabled"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_short_press_power_key_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_short_press_power_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableShortPressPowerKey"
+                android:text="enableShortPressPowerKey"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_usb_permission_dialog_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_usb_permission_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableUsbPermissionDialog"
+                android:text="enableUsbPermissionDialog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_screen_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getScreenTimeout"
+                android:text="getScreenTimeout"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_battery_work_mode_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mode" />
+
+            <Button
+                android:id="@+id/bt_set_battery_work_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setBatteryWorkMode"
+                android:text="setBatteryWorkMode"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_work_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryWorkMode"
+                android:text="getBatteryWorkMode"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_enable_q_s_panel_icon_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="icon" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_q_s_panel_icon_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_q_s_panel_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableQSPanelIcon"
+                android:text="enableQSPanelIcon"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_airplane_mode_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="open" />
+
+            <Button
+                android:id="@+id/bt_set_airplane_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAirplaneMode"
+                android:text="setAirplaneMode"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_clear_device_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearDeviceOwner"
+                android:text="clearDeviceOwner"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_enable_boot_or_shutdown_regularly_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <EditText
+                android:id="@+id/et_enable_boot_or_shutdown_regularly_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hour" />
+
+            <EditText
+                android:id="@+id/et_enable_boot_or_shutdown_regularly_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="minutes" />
+
+            <EditText
+                android:id="@+id/et_enable_boot_or_shutdown_regularly_repeat_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="repeatMode" />
+
+            <Button
+                android:id="@+id/bt_enable_boot_or_shutdown_regularly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableBootOrShutdownRegularly"
+                android:text="enableBootOrShutdownRegularly"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_disable_boot_or_shutdown_regularly_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <Button
+                android:id="@+id/bt_disable_boot_or_shutdown_regularly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="disableBootOrShutdownRegularly"
+                android:text="disableBootOrShutdownRegularly"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_disable_nitz_time_zone_disable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="disable" />
+
+            <Button
+                android:id="@+id/bt_disable_nitz_time_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="disableNitzTimeZone"
+                android:text="disableNitzTimeZone"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_talkback_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_talkback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableTalkback"
+                android:text="enableTalkback"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_exe_top_cmd_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="count" />
+
+            <Button
+                android:id="@+id/bt_exe_top_cmd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="exeTopCmd"
+                android:text="exeTopCmd"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

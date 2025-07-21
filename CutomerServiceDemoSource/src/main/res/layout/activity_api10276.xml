@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmi.tmsservice.apidemo.API10276Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_ipaddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="ipaddr"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_gateway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="gateway"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_network_prefix_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="networkPrefixLength"
+            android:inputType="number"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_dns1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="dns1"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_dns2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="dns2"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status" />
+
+            <CheckBox
+                android:id="@+id/cb_reconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reconnect" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setEthernetStaticIp"
+            android:text="set Ethernet Static Ip" />
+
+    </LinearLayout>
+
+</ScrollView>

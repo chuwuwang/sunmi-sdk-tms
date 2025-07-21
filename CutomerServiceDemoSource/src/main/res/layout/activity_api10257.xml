@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmi.tmsservice.apidemo.API10257Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="---------------New API---------------"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_device_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled" />
+
+        <Button
+            android:id="@+id/btn_set_app_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="switchDeviceEnabled"
+            android:text="Switch Device Enabled" />
+
+        <EditText
+            android:id="@+id/et_set_uninstall_app_lock_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="uninstall app lock password"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_set_uninstall_app_lock_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="initPasswordForUninstallAppLock"
+            android:text="Set uninstall app lock password" />
+
+        <EditText
+            android:id="@+id/et_uninstall_app_lock_current_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="uninstall app lock current password"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/et_uninstall_app_lock_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="uninstall app lock new password"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_update_uninstall_app_lock_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="modifyPasswordForUninstallAppLock"
+            android:text="Update uninstall app lock password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_mobile_restrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="restrict" />
+
+            <EditText
+                android:id="@+id/et_mobile_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="PackageName"
+                android:text="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_set_app_restrict_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAppRestrictMobile"
+            android:text="Set App Restrict Mobile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_wlan_restrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="restrict" />
+
+            <EditText
+                android:id="@+id/et_wlan_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="PackageName"
+                android:text="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_set_app_restrict_wlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAppRestrictWlan"
+            android:text="Set App Restrict Wlan" />
+
+        <Button
+            android:id="@+id/btn_get_app_restrict_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getAppRestrictMobile"
+            android:text="Get App Restrict Mobile" />
+
+        <Button
+            android:id="@+id/btn_get_app_restrict_wlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getAppRestrictWlan"
+            android:text="Get App Restrict Wlan" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="---------------Update API---------------"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_set_boot_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Boot animation path"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_set_boot_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setBootAnimation"
+            android:text="Set Boot Animation" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".Month3APIActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="slot index:" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_slot_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:entries="@array/apn_slot_index"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btn_get_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="getPhoneNumber"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:text="getPhoneNumberBySlotIndex" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_screen_shot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="doScreenshot"
+            android:textAllCaps="false"
+            android:text="doScreenshot" />
+
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/btn_get_default_data_slot_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="getDefaultDataSlotIndex"
+            android:text="getDefaultDataSlotIndex" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network Type:" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_network_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:entries="@array/network_type"
+                android:spinnerMode="dropdown" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_get_traffic_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="queryTrafficUsageSummaryTotal"
+            android:text="queryTrafficUsageSummary(Total)" />
+
+        <Button
+            android:id="@+id/btn_get_traffic_24hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="queryTrafficUsageSummary24Hours"
+            android:text="queryTrafficUsageSummary(24Hours)" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="slot index:" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_carrier_slot_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:entries="@array/apn_slot_index"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btn_get_carrier_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:onClick="getCarrierInfo"
+                android:textSize="16dp"
+                android:text="getCarrierInfo" />
+        </LinearLayout>
+
+
+
+        <Switch
+            android:id="@+id/switch_gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="enableGPS" />
+
+        <Switch
+            android:id="@+id/switch_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="enableBluetooth" />
+
+        <Switch
+            android:id="@+id/switch_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="enableWIFI" />
+
+        <Switch
+            android:id="@+id/switch_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="clickableNavigation" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getRamTotalSize"
+            android:textAllCaps="false"
+            android:text="getRamTotalSize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getRamUsedSize"
+            android:textAllCaps="false"
+            android:text="getRamUsedSize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getRomTotalSize"
+            android:textAllCaps="false"
+            android:text="getRomTotalSize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getRomUsedSize"
+            android:textAllCaps="false"
+            android:text="getRomUsedSize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="calculateLastFullChargeTime"
+            android:text="@string/calculate_full_charge_time" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="calculateUsagePercent"
+            android:text="@string/calculate_usage_percent" />
+
+        <Button
+            android:id="@+id/btn_get_app_usage_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="getAppUsageInfo"
+            android:text="@string/get_app_usage_info" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="getDevicesFlashID"
+            android:text="getDevicesFlashID" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="false"
+            android:onClick="queryCallRecords"
+            android:text="queryCallRecords" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="false"
+            android:onClick="queryMessages"
+            android:text="queryMessages" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="queryContacts"
+            android:textAllCaps="false"
+            android:text="queryContacts" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="deleteAllContacts"
+            android:text="deleteAllContacts" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入收件人手机号"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_msg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入短信内容" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sendTextMessage"
+                    android:text="sendTextMessage"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="sendTextMessageWithCallback"
+                    android:text="sendTextMessageWithCallback"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="insertCallLogs"
+            android:text="insertCallLogs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入电话号码"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:onClick="deletedOneCallLogs"
+                android:text="deletedOneCallLogs" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_contact_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入联系人手机号"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入联系人姓名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:onClick="insertContacts"
+                android:text="insertContacts" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="clearKeyguardPwdAndResetZPattern"
+            android:text="clearKeyguardPwdAndResetZPattern" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="enableLockDevice"
+            android:text="enableLockDevice" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="getSystemAllPackageInfo"
+            android:text="getSystemAllPackageInfo" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="updateAPN"
+            android:text="updateAPN" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_apn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入APN" />
+
+            <EditText
+                android:id="@+id/et_msg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入名称" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:onClick="deleteAPN"
+                android:text="deleteAPN" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入SSID" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addNetwork"
+                android:text="addNetwork"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_net_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="请输入NetWorkId" />
+
+            <EditText
+                android:id="@+id/et_update_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入SSID" />
+
+            <EditText
+                android:id="@+id/et_update_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="updateNetwork"
+                android:text="updateNetwork"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_delete_net_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入NetWorkId" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="deletedNetwork"
+                android:text="deletedNetwork"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getConfiguredNetworks"
+            android:text="getConfiguredNetworks"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getNoFilterBatteryUsageInfos"
+            android:text="getNoFilterBatteryUsageInfos"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_sms_tmsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入时间戳" />
+
+            <EditText
+                android:id="@+id/et_sms_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入收件人或者发件人号码" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="type:" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_sms_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:entries="@array/sms_type"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="slot index:" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_sms_slot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:entries="@array/apn_slot_index"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_sms_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入短信内容" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addMessage"
+                android:text="addMessage"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入应用程序包名" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="allowAlertWindowPermission"
+                android:text="allowAlertWindowPermission"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</ScrollView>

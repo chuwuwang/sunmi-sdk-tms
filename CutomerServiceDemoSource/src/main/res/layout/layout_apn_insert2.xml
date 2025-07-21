@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_name"
+            app:layout_constraintEnd_toStartOf="@+id/et_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label_apn"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="APN:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_apn"
+            app:layout_constraintEnd_toStartOf="@+id/et_apn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_apn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_apn"
+            app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+        <TextView
+            android:id="@+id/label_type"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="Type:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_type"
+            app:layout_constraintEnd_toStartOf="@+id/et_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_apn" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_type"
+            app:layout_constraintTop_toBottomOf="@+id/et_apn" />
+
+        <TextView
+            android:id="@+id/label_proxy"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="Proxy:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_proxy"
+            app:layout_constraintEnd_toStartOf="@+id/et_proxy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_type" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_proxy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_proxy"
+            app:layout_constraintTop_toBottomOf="@+id/et_type" />
+
+        <TextView
+            android:id="@+id/label_server"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="Server:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_server"
+            app:layout_constraintEnd_toStartOf="@+id/et_server"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_proxy" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_server"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_server"
+            app:layout_constraintTop_toBottomOf="@+id/et_proxy" />
+
+        <TextView
+            android:id="@+id/label_port"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="Port:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_port"
+            app:layout_constraintEnd_toStartOf="@+id/et_port"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_server" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_port"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_port"
+            app:layout_constraintTop_toBottomOf="@+id/et_server" />
+
+        <TextView
+            android:id="@+id/label_auth_type"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="Auth Type:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sp_auth_type"
+            app:layout_constraintEnd_toStartOf="@+id/sp_auth_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_port" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/sp_auth_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_auth_type"
+            app:layout_constraintTop_toBottomOf="@+id/et_port" />
+
+        <TextView
+            android:id="@+id/label_user"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="User:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_user"
+            app:layout_constraintEnd_toStartOf="@+id/et_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_auth_type" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_user"
+            app:layout_constraintTop_toBottomOf="@+id/sp_auth_type" />
+
+        <TextView
+            android:id="@+id/label_password"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="Password:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_password"
+            app:layout_constraintEnd_toStartOf="@+id/et_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_user" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_password"
+            app:layout_constraintTop_toBottomOf="@+id/et_user" />
+
+        <TextView
+            android:id="@+id/label_mms_proxy"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="MMS Proxy:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_mms_proxy"
+            app:layout_constraintEnd_toStartOf="@+id/et_mms_proxy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_mms_proxy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_mms_proxy"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <TextView
+            android:id="@+id/label_mms_port"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="MMS Port:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_mms_port"
+            app:layout_constraintEnd_toStartOf="@+id/et_mms_port"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_mms_proxy" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_mms_port"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_mms_port"
+            app:layout_constraintTop_toBottomOf="@+id/et_mms_proxy" />
+
+        <TextView
+            android:id="@+id/label_mmsc"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="MMSC:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_mmsc"
+            app:layout_constraintEnd_toStartOf="@+id/et_mmsc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_mms_port" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_mmsc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_mmsc"
+            app:layout_constraintTop_toBottomOf="@+id/et_mms_port" />
+
+        <TextView
+            android:id="@+id/label_mcc"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="MCC:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_mcc"
+            app:layout_constraintEnd_toStartOf="@+id/et_mcc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_mmsc" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_mcc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_mcc"
+            app:layout_constraintTop_toBottomOf="@+id/et_mmsc" />
+
+        <TextView
+            android:id="@+id/label_mnc"
+            android:layout_width="@dimen/width_apn_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="MNC:"
+            android:textSize="@dimen/text_size_apn_label"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_mnc"
+            app:layout_constraintEnd_toStartOf="@+id/et_mnc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_mcc" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_mnc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/text_size_apn_param"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_mnc"
+            app:layout_constraintTop_toBottomOf="@+id/et_mcc" />
+
+        <Button
+            android:id="@+id/bt_add_apn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Apn"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/et_mnc" />
+
+        <Button
+            android:id="@+id/bt_update_apn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Update Apn"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/bt_add_apn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

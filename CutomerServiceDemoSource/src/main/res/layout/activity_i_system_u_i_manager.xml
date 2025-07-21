@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.ISystemUIManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_enable_navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableNavigationBar"
+                android:text="enableNavigationBar"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_lock_screen_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="flag" />
+
+            <Button
+                android:id="@+id/bt_enable_lock_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableLockScreen"
+                android:text="enableLockScreen"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_enable_notification_packagename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packagename" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_notification_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="flag" />
+
+            <Button
+                android:id="@+id/bt_enable_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableNotification"
+                android:text="enableNotification"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_powe_lock_screen_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="flag" />
+
+            <Button
+                android:id="@+id/bt_enable_powe_lock_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enablePoweLockScreen"
+                android:text="enablePoweLockScreen"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_show_navigation_bar_back_button_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show" />
+
+            <Button
+                android:id="@+id/bt_show_navigation_bar_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showNavigationBarBackButton"
+                android:text="showNavigationBarBackButton"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_show_navigation_bar_home_button_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show" />
+
+            <Button
+                android:id="@+id/bt_show_navigation_bar_home_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showNavigationBarHomeButton"
+                android:text="showNavigationBarHomeButton"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_show_navigation_bar_recents_button_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show" />
+
+            <Button
+                android:id="@+id/bt_show_navigation_bar_recents_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showNavigationBarRecentsButton"
+                android:text="showNavigationBarRecentsButton"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_show_notification_panel_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show" />
+
+            <Button
+                android:id="@+id/bt_show_notification_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showNotificationPanel"
+                android:text="showNotificationPanel"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_show_navigation_bar_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show" />
+
+            <Button
+                android:id="@+id/bt_show_navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showNavigationBar"
+                android:text="showNavigationBar"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_show_status_bar_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show" />
+
+            <Button
+                android:id="@+id/bt_show_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showStatusBar"
+                android:text="showStatusBar"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_navigation_bar_back_button_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_navigation_bar_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableNavigationBarBackButton"
+                android:text="enableNavigationBarBackButton"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_navigation_bar_back_button_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isNavigationBarBackButtonEnabled"
+                android:text="isNavigationBarBackButtonEnabled"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_navigation_bar_home_button_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_navigation_bar_home_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableNavigationBarHomeButton"
+                android:text="enableNavigationBarHomeButton"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_navigation_bar_home_button_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isNavigationBarHomeButtonEnabled"
+                android:text="isNavigationBarHomeButtonEnabled"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_navigation_bar_recents_button_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_navigation_bar_recents_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableNavigationBarRecentsButton"
+                android:text="enableNavigationBarRecentsButton"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_navigation_bar_recents_button_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isNavigationBarRecentsButtonEnabled"
+                android:text="isNavigationBarRecentsButtonEnabled"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_status_bar_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableStatusBar"
+                android:text="enableStatusBar"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_notification_panel_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_notification_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableNotificationPanel"
+                android:text="enableNotificationPanel"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_clickable_navigation_bar_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clickable" />
+
+            <Button
+                android:id="@+id/bt_clickable_navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickableNavigationBar"
+                android:text="clickableNavigationBar"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_wifi_bar_clickable_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clickable" />
+
+            <Button
+                android:id="@+id/bt_set_wifi_bar_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setWifiBarClickable"
+                android:text="setWifiBarClickable"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_airplane_mode_bar_clickable_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clickable" />
+
+            <Button
+                android:id="@+id/bt_set_airplane_mode_bar_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAirplaneModeBarClickable"
+                android:text="setAirplaneModeBarClickable"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_screen_brightness_automatic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="automatic" />
+
+            <EditText
+                android:id="@+id/et_set_screen_brightness_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="value" />
+
+            <Button
+                android:id="@+id/bt_set_screen_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenBrightness"
+                android:text="setScreenBrightness"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_show_battery_percent_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show" />
+
+            <Button
+                android:id="@+id/bt_show_battery_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showBatteryPercent"
+                android:text="showBatteryPercent"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_navigation_bar_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isNavigationBarEnabled"
+                android:text="isNavigationBarEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_is_navigation_key_enabled_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <Button
+                android:id="@+id/bt_is_navigation_key_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isNavigationKeyEnabled"
+                android:text="isNavigationKeyEnabled"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_reset_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="resetStatusBar"
+                android:text="resetStatusBar"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_status_bar_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isStatusBarEnabled"
+                android:text="isStatusBarEnabled"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_status_bar_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isStatusBarVisible"
+                android:text="isStatusBarVisible"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_navigation_bar_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isNavigationBarVisible"
+                android:text="isNavigationBarVisible"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_a_p_n_visible_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_set_a_p_n_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAPNVisible"
+                android:text="setAPNVisible"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_navigation_bar_button_location_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="left" />
+
+            <EditText
+                android:id="@+id/et_set_navigation_bar_button_location_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="center" />
+
+            <EditText
+                android:id="@+id/et_set_navigation_bar_button_location_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="right" />
+
+            <Button
+                android:id="@+id/bt_set_navigation_bar_button_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setNavigationBarButtonLocation"
+                android:text="setNavigationBarButtonLocation"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_settings_ui_install_wifi_certificate_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="value" />
+
+            <Button
+                android:id="@+id/bt_set_settings_ui_install_wifi_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSettingsUiInstallWifiCertificate"
+                android:text="setSettingsUiInstallWifiCertificate"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_settings_ui_install_wifi_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSettingsUiInstallWifiCertificate"
+                android:text="getSettingsUiInstallWifiCertificate"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

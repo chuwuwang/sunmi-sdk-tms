@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmi.tmsservice.apidemo.API10278Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_slot_index1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="slot index"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getDataRoamingEnabled"
+            android:text="get Data Roaming Enabled" />
+
+        <EditText
+            android:id="@+id/et_slot_index2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="slot index"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enabled" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setDataRoamingEnabled"
+                android:text="set Data Roaming Enabled" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_custom_ntp_server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="custom ntp server" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setCustomNtpServer"
+            android:text="set Custom Ntp Server" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getCustomNtpServer"
+            android:text="get Custom Ntp Server" />
+
+        <EditText
+            android:id="@+id/et_ntp_servers1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ntp servers, split by ','" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addNtpServers"
+            android:text="add Ntp Servers" />
+
+        <EditText
+            android:id="@+id/et_ntp_servers2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ntp servers, split by ','" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="removeNtpServers"
+            android:text="remove Ntp Servers" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getNtpServers"
+            android:text="get Ntp Servers" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getBestNtpServer"
+            android:text="get Best Ntp Server" />
+
+    </LinearLayout>
+
+</ScrollView>

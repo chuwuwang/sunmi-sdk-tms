@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IIotInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_get_total_print_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getTotalPrintLength"
+                android:text="getTotalPrintLength"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_front_camera_open_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getFrontCameraOpenCount"
+                android:text="getFrontCameraOpenCount"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_rear_camera_open_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getRearCameraOpenCount"
+                android:text="getRearCameraOpenCount"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_swiping_card_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSwipingCardTimes"
+                android:text="getSwipingCardTimes"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_dip_insert_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDipInsertTimes"
+                android:text="getDipInsertTimes"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_n_f_c_card_read_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getNFCCardReadTimes"
+                android:text="getNFCCardReadTimes"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

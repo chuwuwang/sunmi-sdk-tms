@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmi.tmsservice.apidemo.API10261Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="---------------New API---------------"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_enable_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/btn_enable_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:onClick="enableHideNavigationBarPackageWhiteList"
+                android:text="enable Hide Navigation Bar Package Whitelist" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_get_hide_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getHideNavigationBarPackageWhiteListStatus"
+            android:text="get Hide Navigation Bar Package White;ist Status" />
+
+        <EditText
+            android:id="@+id/et_package_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Please input package name"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_add_white_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addPkgToHideNavigationBarPkgWhiteList"
+            android:text="add Pkg To Hide Navigation Bar Pkg Whitelist" />
+
+        <Button
+            android:id="@+id/btn_get_white_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getHideNavigationBarPackageWhiteList"
+            android:text="get Hide Navigation Bar Package Whitelist" />
+
+        <Button
+            android:id="@+id/btn_clear_white_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearHideNavigationBarPackageWhiteList"
+            android:text="clear Hide Navigation Bar Package Whitelist" />
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmi.tmsservice.apidemo.API10271Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_disable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="disable" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="forbiddenCamera"
+                android:text="forbidden Camera" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getForegroundPackage"
+            android:text="Get Foreground Package" />
+
+        <EditText
+            android:id="@+id/et_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="wifi ssid"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="wifi password"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_security_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="security type(1:None, 2:WEP, 3:WPA/WPA2-Personal)"
+            android:inputType="number"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addWifiSsid"
+            android:text="add Wifi Ssid" />
+
+        <EditText
+            android:id="@+id/et_package_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="package name"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_permissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="android permissions, split by ','"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="revokeAppPermission"
+            android:text="revoke App Permission" />
+
+        <EditText
+            android:id="@+id/et_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="type\n(0:Close forbidden uninstall,\n 1:Forbidden uninstall all app)"
+            android:inputType="number"
+            android:minLines="3"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setForbiddenUninstallPackageStatus"
+            android:text="set Forbidden Uninstall Package Status" />
+
+        <EditText
+            android:id="@+id/et_notification_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="package name"
+            android:minLines="3"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enabled" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setNotificationsEnabledForPackage"
+                android:text="set Notifications Enabled For Package" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

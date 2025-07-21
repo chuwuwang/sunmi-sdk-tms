@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.sunmi.tmsservice.demo"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 10059
+        versionName "1.0.59"
+    }
+    signingConfigs {
+        demo_sign {
+            storeFile file('../demo.keystore')
+            storePassword "qqqq1111"
+            keyAlias "demo"
+            keyPassword "qqqq1111"
+        }
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            zipAlignEnabled true
+        }
+        release {
+            debuggable true
+            minifyEnabled false
+            zipAlignEnabled true
+            signingConfig signingConfigs.demo_sign
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "SUNMI_CUSTOMER_SERVICE_API_DEMO_v" + variant.versionName + "_" + variant.buildType.name + ".apk"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'GoogleAppIndexingWarning'
+        disable 'NonConstantResourceId'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.32"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
+
+    implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.appcompat
+    implementation rootProject.ext.dependencies.material
+    implementation rootProject.ext.dependencies.constraintlayout
+
+    implementation files('libs/SUNMI_CUSTOMER_API_v1.0.48_release.aar')
+
+    api project(path: ':CutomerServiceDemoSource')
+}

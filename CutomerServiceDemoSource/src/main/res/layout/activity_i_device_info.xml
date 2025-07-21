@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IDeviceInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_get_serial_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSerialNo"
+                android:text="getSerialNo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_i_m_s_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getIMSI"
+                android:text="getIMSI"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_i_m_e_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getIMEI"
+                android:text="getIMEI"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_i_c_c_i_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getICCID"
+                android:text="getICCID"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_manufacture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getManufacture"
+                android:text="getManufacture"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getModel"
+                android:text="getModel"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_android_o_s_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAndroidOSVersion"
+                android:text="getAndroidOSVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_android_kernel_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAndroidKernelVersion"
+                android:text="getAndroidKernelVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_r_o_m_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getROMVersion"
+                android:text="getROMVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_r_o_m_version_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getROMVersionCode"
+                android:text="getROMVersionCode"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_firmware_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getFirmwareVersion"
+                android:text="getFirmwareVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_hardware_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getHardwareVersion"
+                android:text="getHardwareVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_s_d_k_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSDKVersion"
+                android:text="getSDKVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_memory_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMemoryOccupation"
+                android:text="getMemoryOccupation"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMac"
+                android:text="getMac"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_etn_mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getEtnMac"
+                android:text="getEtnMac"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBrand"
+                android:text="getBrand"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_system_property_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="key" />
+
+            <Button
+                android:id="@+id/bt_get_system_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSystemProperty"
+                android:text="getSystemProperty"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_i_m_s_i_by_slot_index_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <Button
+                android:id="@+id/bt_get_i_m_s_i_by_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getIMSIBySlotIndex"
+                android:text="getIMSIBySlotIndex"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_i_m_e_i_by_slot_index_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <Button
+                android:id="@+id/bt_get_i_m_e_i_by_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getIMEIBySlotIndex"
+                android:text="getIMEIBySlotIndex"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_i_c_c_i_d_by_slot_index_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <Button
+                android:id="@+id/bt_get_i_c_c_i_d_by_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getICCIDBySlotIndex"
+                android:text="getICCIDBySlotIndex"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_full_i_c_c_i_d_sub_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="subId" />
+
+            <Button
+                android:id="@+id/bt_get_full_i_c_c_i_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getFullICCID"
+                android:text="getFullICCID"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_devices_flash_i_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDevicesFlashID"
+                android:text="getDevicesFlashID"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_s_p_h_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSPHS"
+                android:text="getSPHS"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_s_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSV"
+                android:text="getSV"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_model_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryModelName"
+                android:text="getBatteryModelName"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_serial_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatterySerialNo"
+                android:text="getBatterySerialNo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_part_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryPartNumber"
+                android:text="getBatteryPartNumber"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_manufacture_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryManufactureDate"
+                android:text="getBatteryManufactureDate"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_first_use_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryFirstUseTime"
+                android:text="getBatteryFirstUseTime"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_max_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryMaxCapacity"
+                android:text="getBatteryMaxCapacity"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_sunmi_os_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSunmiOsVersion"
+                android:text="getSunmiOsVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_ip_addresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getIpAddresses"
+                android:text="getIpAddresses"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_device_bluetooth_mac_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDeviceBluetoothMacAddress"
+                android:text="getDeviceBluetoothMacAddress"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_financial_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isFinancialDevice"
+                android:text="isFinancialDevice"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_verify_crp_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="filePath" />
+
+            <Button
+                android:id="@+id/bt_verify_crp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="verifyCrp"
+                android:text="verifyCrp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_install_crp_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="filePath" />
+
+            <Button
+                android:id="@+id/bt_install_crp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="installCrp"
+                android:text="installCrp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_crp_type_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="filePath" />
+
+            <Button
+                android:id="@+id/bt_get_crp_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCrpType"
+                android:text="getCrpType"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_crp_version_crp_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="crpType" />
+
+            <Button
+                android:id="@+id/bt_get_crp_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCrpVersion"
+                android:text="getCrpVersion"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_gms_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getGmsFlag"
+                android:text="getGmsFlag"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_inner_scanner_supported"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isInnerScannerSupported"
+                android:text="isInnerScannerSupported"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_inner_printer_supported"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isInnerPrinterSupported"
+                android:text="isInnerPrinterSupported"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_display_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDisplayId"
+                android:text="getDisplayId"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

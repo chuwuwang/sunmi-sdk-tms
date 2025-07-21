@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.ICertificateManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_update_certificate_cert_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="certPath" />
+
+            <Button
+                android:id="@+id/bt_update_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateCertificate"
+                android:text="updateCertificate"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_certificate_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCertificateInfo"
+                android:text="getCertificateInfo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_trusted_file_cert_chain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getTrustedFileCertChain"
+                android:text="getTrustedFileCertChain"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_install_system_c_a_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="path" />
+
+            <Button
+                android:id="@+id/bt_install_system_c_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="installSystemCA"
+                android:text="installSystemCA"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_uninstall_system_c_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="uninstallSystemCA"
+                android:text="uninstallSystemCA"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_uninstall_system_c_aby_path_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="path" />
+
+            <Button
+                android:id="@+id/bt_uninstall_system_c_aby_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="uninstallSystemCAbyPath"
+                android:text="uninstallSystemCAbyPath"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_support_i_s_o_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isSupportISOCertificate"
+                android:text="isSupportISOCertificate"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

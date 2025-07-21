@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.ISoftwareManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_install_app_app_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="appFilePath" />
+
+            <Button
+                android:id="@+id/bt_install_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="installApp"
+                android:text="installApp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_uninstall_app_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_uninstall_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="uninstallApp"
+                android:text="uninstallApp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_kill_app_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_kill_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="killApp"
+                android:text="killApp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_restart_app_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_restart_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="restartApp"
+                android:text="restartApp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_app_white_list_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="whiteList" />
+
+            <Button
+                android:id="@+id/bt_set_app_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAppWhiteList"
+                android:text="setAppWhiteList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_app_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAppWhiteList"
+                android:text="getAppWhiteList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_launcher_shortcut_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_add_launcher_shortcut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addLauncherShortcut"
+                android:text="addLauncherShortcut"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_launcher_shortcut_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_remove_launcher_shortcut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeLauncherShortcut"
+                android:text="removeLauncherShortcut"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_battery_optimization_whitelist_whitelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="whitelist" />
+
+            <Button
+                android:id="@+id/bt_set_battery_optimization_whitelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setBatteryOptimizationWhitelist"
+                android:text="setBatteryOptimizationWhitelist"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_app_enabled_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <CheckBox
+                android:id="@+id/cb_set_app_enabled_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enabled" />
+
+            <Button
+                android:id="@+id/bt_set_app_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAppEnabled"
+                android:text="setAppEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_request_permissions_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_get_request_permissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getRequestPermissions"
+                android:text="getRequestPermissions"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_grant_app_permissions_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <EditText
+                android:id="@+id/et_grant_app_permissions_permissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="permissions" />
+
+            <Button
+                android:id="@+id/bt_grant_app_permissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="grantAppPermissions"
+                android:text="grantAppPermissions"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_check_app_permissions_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <EditText
+                android:id="@+id/et_check_app_permissions_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <Button
+                android:id="@+id/bt_check_app_permissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="checkAppPermissionsByType"
+                android:text="checkAppPermissionsByType"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_allow_alert_window_permission_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_allow_alert_window_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="allowAlertWindowPermission"
+                android:text="allowAlertWindowPermission"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_prohibit_uninstall_pkg_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pkgName" />
+
+            <CheckBox
+                android:id="@+id/cb_prohibit_uninstall_allow_uninstall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="allowUninstall" />
+
+            <Button
+                android:id="@+id/bt_prohibit_uninstall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="prohibitUninstall"
+                android:text="prohibitUninstall"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_prohibit_uninstall_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getProhibitUninstallList"
+                android:text="getProhibitUninstallList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_init_password_for_uninstall_app_lock_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password" />
+
+            <Button
+                android:id="@+id/bt_init_password_for_uninstall_app_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="initPasswordForUninstallAppLock"
+                android:text="initPasswordForUninstallAppLock"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_modify_password_for_uninstall_app_lock_current_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="currentPwd" />
+
+            <EditText
+                android:id="@+id/et_modify_password_for_uninstall_app_lock_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="newPwd" />
+
+            <Button
+                android:id="@+id/bt_modify_password_for_uninstall_app_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="modifyPasswordForUninstallAppLock"
+                android:text="modifyPasswordForUninstallAppLock"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_clear_application_user_data_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_clear_application_user_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearApplicationUserData"
+                android:text="clearApplicationUserData"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_hide_navigation_bar_package_white_list_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_hide_navigation_bar_package_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableHideNavigationBarPackageWhiteList"
+                android:text="enableHideNavigationBarPackageWhiteList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_hide_navigation_bar_package_white_list_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getHideNavigationBarPackageWhiteListStatus"
+                android:text="getHideNavigationBarPackageWhiteListStatus"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_pkg_to_hide_navigation_bar_pkg_white_list_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_add_pkg_to_hide_navigation_bar_pkg_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPkgToHideNavigationBarPkgWhiteList"
+                android:text="addPkgToHideNavigationBarPkgWhiteList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_hide_navigation_bar_package_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getHideNavigationBarPackageWhiteList"
+                android:text="getHideNavigationBarPackageWhiteList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_clear_hide_navigation_bar_package_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearHideNavigationBarPackageWhiteList"
+                android:text="clearHideNavigationBarPackageWhiteList"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_auto_start_app_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_auto_start_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableAutoStartApp"
+                android:text="enableAutoStartApp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_auto_start_app_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isAutoStartAppEnabled"
+                android:text="isAutoStartAppEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_auto_start_app_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_set_auto_start_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAutoStartApp"
+                android:text="setAutoStartApp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_auto_start_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAutoStartApp"
+                android:text="getAutoStartApp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_clear_auto_start_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearAutoStartApp"
+                android:text="clearAutoStartApp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_clear_application_user_data_with_result_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_clear_application_user_data_with_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearApplicationUserDataWithResult"
+                android:text="clearApplicationUserDataWithResult"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_delete_application_cache_files_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_delete_application_cache_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteApplicationCacheFiles"
+                android:text="deleteApplicationCacheFiles"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_revoke_app_permission_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <EditText
+                android:id="@+id/et_revoke_app_permission_permissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="permissions" />
+
+            <Button
+                android:id="@+id/bt_revoke_app_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="revokeAppPermission"
+                android:text="revokeAppPermission"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_forbidden_uninstall_package_status_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <Button
+                android:id="@+id/bt_set_forbidden_uninstall_package_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setForbiddenUninstallPackageStatus"
+                android:text="setForbiddenUninstallPackageStatus"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_notifications_enabled_for_package_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <CheckBox
+                android:id="@+id/cb_set_notifications_enabled_for_package_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enabled" />
+
+            <Button
+                android:id="@+id/bt_set_notifications_enabled_for_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setNotificationsEnabledForPackage"
+                android:text="setNotificationsEnabledForPackage"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_foreground_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getForegroundPackage"
+                android:text="getForegroundPackage"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_is_foreground_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_is_foreground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isForeground"
+                android:text="isForeground"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_switch_app_enable_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <CheckBox
+                android:id="@+id/cb_switch_app_enable_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_switch_app_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="switchAppEnable"
+                android:text="switchAppEnable"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_undeletable_app_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getUndeletableAppList"
+                android:text="getUndeletableAppList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_launcher_app_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <EditText
+                android:id="@+id/et_set_launcher_app_activity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="activityName" />
+
+            <Button
+                android:id="@+id/bt_set_launcher_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setLauncherApp"
+                android:text="setLauncherApp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_restore_factory_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="restoreFactorySettings"
+                android:text="restoreFactorySettings"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_optimize_battery_package_white_list_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_optimize_battery_package_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableOptimizeBatteryPackageWhiteList"
+                android:text="enableOptimizeBatteryPackageWhiteList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_optimize_battery_package_white_list_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isOptimizeBatteryPackageWhiteListEnabled"
+                android:text="isOptimizeBatteryPackageWhiteListEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_package_to_optimize_battery_package_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName, split by ','" />
+
+            <Button
+                android:id="@+id/bt_add_package_to_optimize_battery_package_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPackageToOptimizeBatteryPackageWhiteList"
+                android:text="addPackageToOptimizeBatteryPackageWhiteList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_pkg_from_optimize_battery_pkg_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName, split by ','" />
+
+            <Button
+                android:id="@+id/bt_remove_pkg_from_optimize_battery_pkg_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removePkgFromOptimizeBatteryPkgWhiteList"
+                android:text="removePkgFromOptimizeBatteryPkgWhiteList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_optimize_battery_package_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getOptimizeBatteryPackageWhiteList"
+                android:text="getOptimizeBatteryPackageWhiteList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_app_to_common_app_lock_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName, split by ','" />
+
+            <EditText
+                android:id="@+id/et_add_app_to_common_app_lock_list_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <EditText
+                android:id="@+id/et_add_app_to_common_app_lock_list_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password" />
+
+            <Button
+                android:id="@+id/bt_add_app_to_common_app_lock_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addAppToCommonAppLockList"
+                android:text="addAppToCommonAppLockList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_app_from_common_app_lock_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName, split by ','" />
+
+            <Button
+                android:id="@+id/bt_remove_app_from_common_app_lock_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeAppFromCommonAppLockList"
+                android:text="removeAppFromCommonAppLockList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_common_app_lock_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCommonAppLockList"
+                android:text="getCommonAppLockList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_is_common_app_lock_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_is_common_app_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isCommonAppLock"
+                android:text="isCommonAppLock"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_app_network_stats_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_get_app_network_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAppNetworkStats"
+                android:text="getAppNetworkStats"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:hint="appFilePath"
+                android:id="@+id/et_install_app_v2_app_file_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:text="autoStart"
+                android:id="@+id/cb_install_app_v2_auto_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bt_install_app_v2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="installAppV2"
+                android:onClick="installAppV2" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

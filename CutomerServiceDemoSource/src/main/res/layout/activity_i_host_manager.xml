@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IHostManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_read_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="readHost"
+                android:text="readHost"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_write_host_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ip" />
+
+            <EditText
+                android:id="@+id/et_write_host_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address" />
+
+            <Button
+                android:id="@+id/bt_write_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="writeHost"
+                android:text="writeHost"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_delete_host_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ip" />
+
+            <EditText
+                android:id="@+id/et_delete_host_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address" />
+
+            <Button
+                android:id="@+id/bt_delete_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteHost"
+                android:text="deleteHost"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

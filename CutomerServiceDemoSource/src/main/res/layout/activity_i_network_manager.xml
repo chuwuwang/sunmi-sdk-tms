@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.INetworkManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_enable_mobile_network_slot_idx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIdx" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_mobile_network_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_mobile_network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableMobileNetwork"
+                android:text="enableMobileNetwork"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_check_a_p_n_apn_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="apnInfo" />
+
+            <Button
+                android:id="@+id/bt_check_a_p_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="checkAPN"
+                android:text="checkAPN"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_a_p_n_apn_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="apnId" />
+
+            <Button
+                android:id="@+id/bt_set_a_p_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAPN"
+                android:text="setAPN"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_add_a_p_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addAPN"
+                android:text="addAPN"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_a_p_n_list_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="selection" />
+
+            <EditText
+                android:id="@+id/et_get_a_p_n_list_sort_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="sortOrder" />
+
+            <Button
+                android:id="@+id/bt_get_a_p_n_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAPNList"
+                android:text="getAPNList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_current_a_p_n_slot_idx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIdx" />
+
+            <Button
+                android:id="@+id/bt_get_current_a_p_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCurrentAPN"
+                android:text="getCurrentAPN"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_simcard_data_enabled_sub_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="subId" />
+
+            <CheckBox
+                android:id="@+id/cb_set_simcard_data_enabled_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_set_simcard_data_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setSimcardDataEnabled"
+                android:text="setSimcardDataEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_query_traffic_usage_summary_network_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkType" />
+
+            <EditText
+                android:id="@+id/et_query_traffic_usage_summary_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="startTime" />
+
+            <EditText
+                android:id="@+id/et_query_traffic_usage_summary_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="endTime" />
+
+            <Button
+                android:id="@+id/bt_query_traffic_usage_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="queryTrafficUsageSummary"
+                android:text="queryTrafficUsageSummary"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_default_data_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDefaultDataSlotIndex"
+                android:text="getDefaultDataSlotIndex"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_update_a_p_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateAPN"
+                android:text="updateAPN"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_delete_a_p_n_apn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="apn" />
+
+            <EditText
+                android:id="@+id/et_delete_a_p_n_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name" />
+
+            <Button
+                android:id="@+id/bt_delete_a_p_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteAPN"
+                android:text="deleteAPN"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_network_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <EditText
+                android:id="@+id/et_add_network_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pwd" />
+
+            <Button
+                android:id="@+id/bt_add_network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addNetwork"
+                android:text="addNetwork"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_update_network_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <EditText
+                android:id="@+id/et_update_network_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pwd" />
+
+            <EditText
+                android:id="@+id/et_update_network_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="network id" />
+
+            <Button
+                android:id="@+id/bt_update_network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateNetwork"
+                android:text="updateNetwork"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_network_network_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkId" />
+
+            <Button
+                android:id="@+id/bt_remove_network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeNetwork"
+                android:text="removeNetwork"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_configured_networks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getConfiguredNetworks"
+                android:text="getConfiguredNetworks"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_mobile_data_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_mobile_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableMobileData"
+                android:text="enableMobileData"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_mobile_data_locked_locked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="locked" />
+
+            <Button
+                android:id="@+id/bt_set_mobile_data_locked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setMobileDataLocked"
+                android:text="setMobileDataLocked"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_app_restrict_mobile_restrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="restrict" />
+
+            <EditText
+                android:id="@+id/et_set_app_restrict_mobile_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_set_app_restrict_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAppRestrictMobile"
+                android:text="setAppRestrictMobile"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_app_restrict_wlan_restrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="restrict" />
+
+            <EditText
+                android:id="@+id/et_set_app_restrict_wlan_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_set_app_restrict_wlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setAppRestrictWlan"
+                android:text="setAppRestrictWlan"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_app_restrict_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAppRestrictMobile"
+                android:text="getAppRestrictMobile"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_app_restrict_wlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getAppRestrictWlan"
+                android:text="getAppRestrictWlan"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_deny_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ip" />
+
+            <Button
+                android:id="@+id/bt_deny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deny"
+                android:text="deny"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_clear_denial_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ip" />
+
+            <Button
+                android:id="@+id/bt_clear_denial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearDenial"
+                android:text="clearDenial"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_clear_denial_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearDenialAll"
+                android:text="clearDenialAll"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_denial_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDenialList"
+                android:text="getDenialList"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_switch_portable_hotspot_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_switch_portable_hotspot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="switchPortableHotspot"
+                android:text="switchPortableHotspot"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_clear_dns_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearDnsCache"
+                android:text="clearDnsCache"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_to_white_list_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ip" />
+
+            <Button
+                android:id="@+id/bt_add_to_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addToWhiteList"
+                android:text="addToWhiteList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_from_white_list_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ip" />
+
+            <Button
+                android:id="@+id/bt_remove_from_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeFromWhiteList"
+                android:text="removeFromWhiteList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getWhiteList"
+                android:text="getWhiteList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_is_active_slot_index_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <Button
+                android:id="@+id/bt_is_active_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isActiveSlotIndex"
+                android:text="isActiveSlotIndex"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_default_data_slot_index_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <Button
+                android:id="@+id/bt_set_default_data_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setDefaultDataSlotIndex"
+                android:text="setDefaultDataSlotIndex"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_of_each_app_network_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkType" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_of_each_app_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="startTime" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_of_each_app_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="endTime" />
+
+            <Button
+                android:id="@+id/bt_get_traffic_of_each_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getTrafficOfEachApp"
+                android:text="getTrafficOfEachApp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_website_white_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getWebsiteWhiteList"
+                android:text="getWebsiteWhiteList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_ip_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ipAddr" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_gateway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="gateway" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_network_prefix_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkPrefixLength" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_dns1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dns1" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_dns2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dns2" />
+
+            <CheckBox
+                android:id="@+id/cb_set_wifi_static_ip_reconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="reconnect" />
+
+            <Button
+                android:id="@+id/bt_set_wifi_static_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setWifiStaticIp"
+                android:text="setWifiStaticIp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_wifi_ssid_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <EditText
+                android:id="@+id/et_add_wifi_ssid_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password" />
+
+            <EditText
+                android:id="@+id/et_add_wifi_ssid_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <Button
+                android:id="@+id/bt_add_wifi_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addWifiSsid"
+                android:text="addWifiSsid"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_ethernet_static_ip_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="status" />
+
+            <EditText
+                android:id="@+id/et_set_ethernet_static_ip_ip_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ipAddr" />
+
+            <EditText
+                android:id="@+id/et_set_ethernet_static_ip_gateway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="gateway" />
+
+            <EditText
+                android:id="@+id/et_set_ethernet_static_ip_network_prefix_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkPrefixLength" />
+
+            <EditText
+                android:id="@+id/et_set_ethernet_static_ip_dns1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dns1" />
+
+            <EditText
+                android:id="@+id/et_set_ethernet_static_ip_dns2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dns2" />
+
+            <CheckBox
+                android:id="@+id/cb_set_ethernet_static_ip_reconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="reconnect" />
+
+            <Button
+                android:id="@+id/bt_set_ethernet_static_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setEthernetStaticIp"
+                android:text="setEthernetStaticIp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_mobile_data_status_by_slot_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <Button
+                android:id="@+id/bt_get_mobile_data_status_by_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMobileDataStatusBySlot"
+                android:text="getMobileDataStatusBySlot"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_mobile_data_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMobileDataStatus"
+                android:text="getMobileDataStatus"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_data_roaming_enabled_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <Button
+                android:id="@+id/bt_get_data_roaming_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDataRoamingEnabled"
+                android:text="getDataRoamingEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_data_roaming_enabled_slot_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIndex" />
+
+            <CheckBox
+                android:id="@+id/cb_set_data_roaming_enabled_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_set_data_roaming_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setDataRoamingEnabled"
+                android:text="setDataRoamingEnabled"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_custom_ntp_server_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="server" />
+
+            <Button
+                android:id="@+id/bt_set_custom_ntp_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setCustomNtpServer"
+                android:text="setCustomNtpServer"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_custom_ntp_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCustomNtpServer"
+                android:text="getCustomNtpServer"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_ntp_servers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ntp servers, split by ','" />
+
+            <Button
+                android:id="@+id/bt_add_ntp_servers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addNtpServers"
+                android:text="addNtpServers"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_ntp_servers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ntp servers, split by ','" />
+
+            <Button
+                android:id="@+id/bt_remove_ntp_servers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeNtpServers"
+                android:text="removeNtpServers"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_ntp_servers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getNtpServers"
+                android:text="getNtpServers"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_best_ntp_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBestNtpServer"
+                android:text="getBestNtpServer"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_wifi_static_ip_v2_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="status" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_v2_ip_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ipAddr" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_v2_gateway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="gateway" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_v2_network_prefix_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkPrefixLength" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_v2_dns1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dns1" />
+
+            <EditText
+                android:id="@+id/et_set_wifi_static_ip_v2_dns2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dns2" />
+
+            <CheckBox
+                android:id="@+id/cb_set_wifi_static_ip_v2_reconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="reconnect" />
+
+            <Button
+                android:id="@+id/bt_set_wifi_static_ip_v2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setWifiStaticIpV2"
+                android:text="setWifiStaticIpV2"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_apn_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getApnList"
+                android:text="getApnList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_forget_saved_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="forgetSavedWifi"
+                android:text="forgetSavedWifi"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_active_sim_card_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getActiveSimCardCount"
+                android:text="getActiveSimCardCount"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_apn_list__v2_slot_idx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="slotIdx" />
+
+            <Button
+                android:id="@+id/bt_get_apn_list__v2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getApnList_V2"
+                android:text="getApnList_V2"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_total_network_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkType" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_total_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="startTime" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_total_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="endTime" />
+
+            <Button
+                android:id="@+id/bt_get_traffic_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getTrafficTotal"
+                android:text="getTrafficTotal"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_of_each_app_map_network_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="networkType" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_of_each_app_map_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="startTime" />
+
+            <EditText
+                android:id="@+id/et_get_traffic_of_each_app_map_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="endTime" />
+
+            <Button
+                android:id="@+id/bt_get_traffic_of_each_app_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getTrafficOfEachAppMap"
+                android:text="getTrafficOfEachAppMap"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_current_network_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCurrentNetworkSlot"
+                android:text="getCurrentNetworkSlot"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_data_warning_policy_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="value" />
+
+            <Button
+                android:id="@+id/bt_set_data_warning_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setDataWarningPolicy"
+                android:text="setDataWarningPolicy"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_reset_network_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="resetNetworkSettings"
+                android:text="resetNetworkSettings"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_a_p_n_apn_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="apnName" />
+
+            <Button
+                android:id="@+id/bt_remove_a_p_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeAPN"
+                android:text="removeAPN"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_dns_white_name_dns_server_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dnsServerName" />
+
+            <Button
+                android:id="@+id/bt_set_dns_white_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setDnsWhiteName"
+                android:text="setDnsWhiteName"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_clear_dns_white_name_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearDnsWhiteNameList"
+                android:text="clearDnsWhiteNameList"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_set_dns_white_name_enable_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_set_dns_white_name_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setDnsWhiteNameEnable"
+                android:text="setDnsWhiteNameEnable"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_install_wlan_certificate_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name" />
+
+            <EditText
+                android:id="@+id/et_install_wlan_certificate_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="certificate file path" />
+
+            <EditText
+                android:id="@+id/et_install_wlan_certificate_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password" />
+
+            <Button
+                android:id="@+id/bt_install_wlan_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="installWlanCertificate"
+                android:text="installWlanCertificate"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_wifi_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/bt_enable_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableWifi"
+                android:text="enableWifi"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_package_restrict_status_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_get_package_restrict_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getPackageRestrictStatus"
+                android:text="getPackageRestrictStatus"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_connect_wifi_ssid_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <Button
+                android:id="@+id/bt_connect_wifi_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="connectWifiSsid"
+                android:text="connectWifiSsid"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_wifi_ssid_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <Button
+                android:id="@+id/bt_remove_wifi_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeWifiSsid"
+                android:text="removeWifiSsid"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_wifi_ssid_by_wifi_configuration_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <EditText
+                android:id="@+id/et_add_wifi_ssid_by_wifi_configuration_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <Button
+                android:id="@+id/bt_add_wifi_ssid_by_wifi_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addWifiSsidByWifiConfiguration"
+                android:text="addWifiSsidByWifiConfiguration"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_turn_off_wifi_hotspot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="turnOffWifiHotspot"
+                android:text="turnOffWifiHotspot"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_turn_on_wifi_hotspot_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ssid" />
+
+            <EditText
+                android:id="@+id/et_turn_on_wifi_hotspot_preShareKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="preShareKey" />
+
+            <Button
+                android:id="@+id/bt_turn_on_wifi_hotspot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="turnOnWifiHotspot"
+                android:text="turnOnWifiHotspot"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_show_wifi_hotspot_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showWifiHotspotSettings"
+                android:text="showWifiHotspotSettings"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_disable_wifi_hotspot_and_hidesettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="disableWifiHotspotAndHideSettings"
+                android:text="disableWifiHotspotAndHideSettings"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_wifi_hotspot_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isWifiHotspotEnable"
+                android:text="isWifiHotspotEnable"
+                android:textAllCaps="false" />
+
+
+
+            <EditText
+                android:id="@+id/et_get_support_network_type_sub_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="subIndex" />
+
+            <Button
+                android:id="@+id/bt_get_support_network_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSupportNetworkType"
+                android:text="getSupportNetworkType"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_preferred_network_mode_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mode" />
+
+            <EditText
+                android:id="@+id/et_set_preferred_network_mode_subIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="subIndex" />
+
+            <Button
+                android:id="@+id/bt_set_preferred_network_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setPreferredNetworkMode"
+                android:text="setPreferredNetworkMode"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

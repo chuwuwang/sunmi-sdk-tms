@@ -1,0 +1,2405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/padding"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn_v10283"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10283"
+            android:text="v1.2.83 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_v10282"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10282"
+            android:text="v1.2.82 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10283" />
+
+        <Button
+            android:id="@+id/btn_v10281"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10281"
+            android:text="v1.2.81 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10282" />
+
+        <Button
+            android:id="@+id/btn_v10280"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10280"
+            android:text="v1.2.80 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10281" />
+
+        <Button
+            android:id="@+id/btn_v10278"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10278"
+            android:text="v1.2.78 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10280"  />
+
+        <Button
+            android:id="@+id/btn_v10277"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10277"
+            android:text="v1.2.77 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10278" />
+
+        <Button
+            android:id="@+id/btn_v10276"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10276"
+            android:text="v1.2.76 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10277" />
+
+        <Button
+            android:id="@+id/btn_v10274"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10274"
+            android:text="v1.2.74 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10276" />
+
+        <Button
+            android:id="@+id/btn_v10272"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10272"
+            android:text="v1.2.72 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10274"  />
+
+        <Button
+            android:id="@+id/btn_v10271"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10271"
+            android:text="v1.2.71 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10272" />
+
+        <Button
+            android:id="@+id/btn_v10270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10270"
+            android:text="v1.2.70 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10271" />
+
+        <Button
+            android:id="@+id/btn_v10268"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10268"
+            android:text="v1.2.68 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10270"/>
+
+        <Button
+            android:id="@+id/btn_v10267"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10267"
+            android:text="v1.2.67 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10268" />
+
+        <Button
+            android:id="@+id/btn_v10266"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10266"
+            android:text="v1.2.66 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10267" />
+
+        <Button
+            android:id="@+id/btn_v10265"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10265"
+            android:text="v1.2.65 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10266" />
+
+        <Button
+            android:id="@+id/btn_v10264"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10264"
+            android:text="v1.2.64 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10265" />
+
+        <Button
+            android:id="@+id/btn_v10263"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10263"
+            android:text="v1.2.63 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10264" />
+
+        <Button
+            android:id="@+id/btn_v10262"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10262"
+            android:text="v1.2.62 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10263" />
+
+        <Button
+            android:id="@+id/btn_v10261"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10261"
+            android:text="v1.2.61 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10262" />
+
+        <Button
+            android:id="@+id/btn_v10259"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10259"
+            android:text="v1.2.59 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10261"  />
+
+        <Button
+            android:id="@+id/btn_v10258"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10258"
+            android:text="v1.2.58 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10259" />
+
+        <Button
+            android:id="@+id/btn_v10257"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI10257"
+            android:text="v1.2.57 interface check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10258" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_usb_tax_control_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="et usb tax control state"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_v10257" />
+
+        <Button
+            android:id="@+id/btn_set_usb_tax_control_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setUsbTaxControlState"
+            android:text="Set Usb Tax Control State"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_usb_tax_control_state" />
+
+        <Button
+            android:id="@+id/btn_get_usb_tax_control_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getUsbTaxControlState"
+            android:text="Get Usb Tax Control State"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_usb_tax_control_state" />
+
+        <Button
+            android:id="@+id/btn_get_battery_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:onClick="getBatteryInfo"
+            android:text="get Battery Info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_usb_tax_control_state" />
+
+        <LinearLayout
+            android:id="@+id/layout_enable_airplane_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_battery_info">
+
+            <CheckBox
+                android:id="@+id/cb_enable_airplane_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/btn_enable_airplane_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:onClick="enableAirplaneMode"
+                android:text="enable Airplane Mode" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/i_0920"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_enable_airplane_mode">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/setScreenBrightness_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:focusedByDefault="false"
+                android:hint="1-255"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_get_imsi" />
+
+            <Button
+                android:id="@+id/setScreenBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenBrightness"
+                android:text="setScreenBrightness"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_slot_index_imsi" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/setScreenTimeout_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:focusedByDefault="false"
+                android:hint="15000/30000/60000/120000/300000/600000/1800000/604800000/2147483647"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_get_imsi" />
+
+            <Button
+                android:id="@+id/setScreenTimeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setScreenTimeout"
+                android:text="setScreenTimeout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_slot_index_imsi" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_lock_airplane_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/i_0920">
+
+            <CheckBox
+                android:id="@+id/cb_lock_airplane_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lock" />
+
+            <Button
+                android:id="@+id/btn_lock_airplane_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:onClick="lockAirplaneMode"
+                android:text="lock Airplane Mode" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_enable_mobile_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_lock_airplane_mode">
+
+            <CheckBox
+                android:id="@+id/cb_enable_mobile_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enable" />
+
+            <Button
+                android:id="@+id/btn_enable_mobile_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:onClick="enableMobileData"
+                android:text="enable Mobile Data" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_lock_mobile_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_enable_mobile_data">
+
+            <CheckBox
+                android:id="@+id/cb_lock_mobile_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lock" />
+
+            <Button
+                android:id="@+id/btn_lock_mobile_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:onClick="lockMobileData"
+                android:text="lock Mobile Data" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_kill_package_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="kill/restart app package name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_lock_mobile_data" />
+
+        <Button
+            android:id="@+id/btn_kill_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="killApp"
+            android:text="KillApp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_kill_package_name" />
+
+        <Button
+            android:id="@+id/btn_restart_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="restartApp"
+            android:text="restartApp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_kill_app" />
+
+        <LinearLayout
+            android:id="@+id/layout_prohibit_uninstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_restart_app">
+
+            <CheckBox
+                android:id="@+id/cb_prohibit_uninstall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="allow uninstall" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_prohibit_uninstall_package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:focusedByDefault="false"
+                android:hint="et package name" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_set_prohibit_uninstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setProhibitUninstall"
+            android:text="Set Prohibit Uninstall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_prohibit_uninstall" />
+
+        <Button
+            android:id="@+id/btn_get_prohibit_uninstall_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getProhibitUninstallList"
+            android:text="Get prohibit uninstall list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_prohibit_uninstall" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_wallpaper_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="wallpaper local path"
+            android:onClick="chooseFile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_prohibit_uninstall_list" />
+
+        <Button
+            android:id="@+id/btn_set_wallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setWallpaper"
+            android:text="Set Wallpaper"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_wallpaper_path" />
+
+        <Button
+            android:id="@+id/btn_get_printed_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getPrintedLength"
+            android:text="Get printed Length"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_wallpaper" />
+
+        <Button
+            android:id="@+id/btn_get_front_camera_open_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getFrontCameraOpenCount"
+            android:text="Get Front Camera Open Count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_printed_length" />
+
+        <Button
+            android:id="@+id/btn_get_rear_camera_open_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getRearCameraOpenCount"
+            android:text="Get Rear Camera Open Count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_front_camera_open_count" />
+
+        <Button
+            android:id="@+id/btn_get_swiping_card_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getSwipingCardTimes"
+            android:text="Get Swiping Card Times"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_rear_camera_open_count" />
+
+        <Button
+            android:id="@+id/btn_get_dip_insert_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getDipInsertTimes"
+            android:text="Get Dip Insert Times"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_swiping_card_times" />
+
+        <Button
+            android:id="@+id/btn_get_nfc_card_read_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getNFCCardReadTimes"
+            android:text="Get NFC Card Read Times"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_dip_insert_times" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_subid_iccid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="slot index,for example 0 or 1"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_nfc_card_read_times" />
+
+        <Button
+            android:id="@+id/btn_get_full_iccid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getFullICCID"
+            android:text="Get Full ICCID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_subid_iccid" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_slot_index_imei"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="slot index,for example 0 or 1"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_full_iccid" />
+
+        <Button
+            android:id="@+id/btn_get_imei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getIMEIByIndex"
+            android:text="Get IMEI by slot index"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_slot_index_imei" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_slot_index_imsi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="slot index,for example 0 or 1"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_imei" />
+
+        <Button
+            android:id="@+id/btn_get_imsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getIMSIByIndex"
+            android:text="Get IMSI by slot index"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_slot_index_imsi" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_slot_index_iccid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="slot index,for example 0 or 1"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_imsi" />
+
+        <Button
+            android:id="@+id/btn_get_iccid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getICCIDByIndex"
+            android:text="Get ICCID by slot index"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_slot_index_iccid" />
+
+        <Button
+            android:id="@+id/btn_get_network_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getNetworkLocation"
+            android:text="Get network location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_iccid" />
+
+        <RelativeLayout
+            android:id="@+id/rlCustomKeyFunction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_network_location">
+
+            <EditText
+                android:id="@+id/btn_custom_key_function_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="custom_key_function_key" />
+
+            <EditText
+                android:id="@+id/btn_custom_key_function_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_custom_key_function_key"
+                android:hint="custom_key_function_type" />
+
+            <EditText
+                android:id="@+id/btn_custom_key_function_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_custom_key_function_type"
+                android:hint="custom_key_function_value" />
+
+            <Button
+                android:id="@+id/btn_custom_key_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_custom_key_function_value"
+                android:onClick="onCustomKeyFunction"
+                android:text="Set CustomKey Function"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_add_to_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="package name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlCustomKeyFunction" />
+
+        <Button
+            android:id="@+id/btn_add_to_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addToLauncher"
+            android:text="Add To Launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_add_to_launcher" />
+
+        <EditText
+            android:id="@+id/et_remove_from_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="package name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_to_launcher" />
+
+        <Button
+            android:id="@+id/btn_remove_from_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="removeFromLauncher"
+            android:text="Remove From Launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_remove_from_launcher" />
+
+        <EditText
+            android:id="@+id/et_set_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Launcher package name"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_remove_from_launcher" />
+
+        <Button
+            android:id="@+id/btn_set_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setLauncher"
+            android:text="Set Launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_set_launcher" />
+
+        <LinearLayout
+            android:id="@+id/ll_set_app_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_launcher">
+
+            <EditText
+                android:id="@+id/et_set_app_enabled"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:hint="App package name"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/cb_app_enabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enabled" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_set_app_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAppEnabled"
+            android:text="Set App Enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_set_app_enabled" />
+
+        <EditText
+            android:id="@+id/et_get_system_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Get System Property Key"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_app_enabled" />
+
+        <Button
+            android:id="@+id/btn_get_system_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getSystemProperty"
+            android:text="Get System Property"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_get_system_property" />
+
+        <EditText
+            android:id="@+id/et_set_system_property_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Set System Property Key"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_system_property" />
+
+        <EditText
+            android:id="@+id/et_set_system_property_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Set System Property Value"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_set_system_property_key" />
+
+        <Button
+            android:id="@+id/btn_set_system_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setSystemProperty"
+            android:text="Set System Property"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_set_system_property_value" />
+
+        <CheckBox
+            android:id="@+id/cb_power_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Power Button Enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_system_property" />
+
+        <Button
+            android:id="@+id/btn_set_power_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setPowerEnabled"
+            android:text="Set Power Button Enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_power_enabled" />
+
+        <Button
+            android:id="@+id/btn_get_power_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getPowerEnabled"
+            android:text="Get Power Button Enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_power_enabled" />
+
+        <EditText
+            android:id="@+id/et_update_locale_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Locale Language"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_power_enabled" />
+
+        <EditText
+            android:id="@+id/et_update_locale_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Locale Country"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_update_locale_language" />
+
+        <Button
+            android:id="@+id/btn_update_locale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="updateLocale"
+            android:text="Update Locale"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_update_locale_country" />
+
+        <EditText
+            android:id="@+id/et_set_battery_white_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Package Name, Split by \',\'"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_update_locale" />
+
+        <Button
+            android:id="@+id/btn_set_battery_white_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setBatteryWhiteList"
+            android:text="Set Battery Optimization List"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_set_battery_white_list" />
+
+        <CheckBox
+            android:id="@+id/cb_adb_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Adb Enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_battery_white_list" />
+
+        <Button
+            android:id="@+id/btn_set_adb_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAdbEnabled"
+            android:text="Set Adb Enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_adb_enabled" />
+
+        <Button
+            android:id="@+id/btn_get_adb_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getAdbEnabled"
+            android:text="Get Adb Enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_adb_enabled" />
+
+        <EditText
+            android:id="@+id/et_get_app_permission_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="App PackageName"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_adb_enabled" />
+
+        <Button
+            android:id="@+id/btn_get_app_permissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getAppRequestPermissions"
+            android:text="Get App Request Permissions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_get_app_permission_package" />
+
+        <EditText
+            android:id="@+id/et_app_permission_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="App PackageName"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_app_permissions" />
+
+        <EditText
+            android:id="@+id/et_app_permission_permissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="User Permissions, Split by \',\'"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_app_permission_package" />
+
+        <Button
+            android:id="@+id/btn_set_app_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAppPermissions"
+            android:text="Set App Permissions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_app_permission_permissions" />
+
+        <EditText
+            android:id="@+id/et_set_system_reset_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="123456"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_app_permission" />
+
+        <Button
+            android:id="@+id/btn_set_system_reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setSystemResetPassword"
+            android:text="Set System Reset Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_set_system_reset_password" />
+
+        <LinearLayout
+            android:id="@+id/ll_time1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_system_reset_password">
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second:" />
+
+            <EditText
+                android:id="@+id/et_second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="second"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minute:" />
+
+            <EditText
+                android:id="@+id/et_minute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="minute"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hour:" />
+
+            <EditText
+                android:id="@+id/et_hour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="hour"
+                android:text="12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_time1">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day:" />
+
+            <EditText
+                android:id="@+id/et_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="day"
+                android:text="24" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month:" />
+
+            <EditText
+                android:id="@+id/et_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="month"
+                android:text="11" />
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year:" />
+
+            <EditText
+                android:id="@+id/et_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="year"
+                android:text="2022" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_set_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="setTime"
+            android:text="SET SYSTEM TIME"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_time2" />
+
+        <EditText
+            android:id="@+id/et_set_auto_time_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_time" />
+
+        <Button
+            android:id="@+id/btn_set_auto_time_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAutoTimeType"
+            android:text="Set Auto Time Type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_set_auto_time_type" />
+
+        <Button
+            android:id="@+id/btn_get_gps_location_with_timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getGPSLocationWithTimeout"
+            android:text="Get GPS Location With Timeout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_auto_time_type" />
+
+        <TextView
+            android:id="@+id/tv_set_time_hour_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hour:"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_set_time_hour"
+            app:layout_constraintEnd_toStartOf="@+id/et_set_time_hour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_gps_location_with_timeout" />
+
+        <EditText
+            android:id="@+id/et_set_time_hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_set_time_hour_label"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_gps_location_with_timeout" />
+
+        <TextView
+            android:id="@+id/tv_set_time_minute_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minute:"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_set_time_minute"
+            app:layout_constraintEnd_toStartOf="@+id/et_set_time_minute"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set_time_hour_label" />
+
+        <EditText
+            android:id="@+id/et_set_time_minute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_set_time_minute_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set_time_hour_label" />
+
+        <TextView
+            android:id="@+id/tv_set_time_second_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second:"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_set_time_second"
+            app:layout_constraintEnd_toStartOf="@+id/et_set_time_second"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set_time_minute_label" />
+
+        <EditText
+            android:id="@+id/et_set_time_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_set_time_second_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set_time_minute_label" />
+
+        <Button
+            android:id="@+id/btn_setting_pci_reboot_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="settingPCIRebootTime"
+            android:text="Set PCI Reboot Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set_time_second_label" />
+
+        <Button
+            android:id="@+id/btn_get_pci_reboot_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getPCIRebootTime"
+            android:text="Get PCI Reboot Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_setting_pci_reboot_time" />
+
+        <Button
+            android:id="@+id/btn_clear_pci_reboot_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearPCIRebootTime"
+            android:text="Clear PCI Reboot Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_pci_reboot_time" />
+
+        <Button
+            android:id="@+id/btnIsCharging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="isCharging"
+            android:text="isCharging"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/btn_clear_pci_reboot_time" />
+
+        <LinearLayout
+            android:id="@+id/llNewRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnIsCharging">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbEnableNavigationBarBackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnEnableNavigationBarBackButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onEnableNavigationBarBackButton"
+                    android:text="enableNavigationBarBackButton"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnIsNavigationBarBackButtonEnabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onIsNavigationBarBackButtonEnabled"
+                    android:text="isNavigationBarBackButtonEnabled"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbEnableNavigationBarHomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnEnableNavigationBarHomeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onEnableNavigationBarHomeButton"
+                    android:text="enableNavigationBarHomeButton"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnIsNavigationBarHomeButtonEnabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onIsNavigationBarHomeButtonEnabled"
+                    android:text="isNavigationBarHomeButtonEnabled"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbEnableNavigationBarRecentsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnEnableNavigationBarRecentsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onEnableNavigationBarRecentsButton"
+                    android:text="enableNavigationBarRecentsButton"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnIsNavigationBarRecentsButtonEnabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onIsNavigationBarRecentsButtonEnabled"
+                    android:text="isNavigationBarRecentsButtonEnabled"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbEnableStatusBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnEnableStatusBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onEnableStatusBar"
+                    android:text="enableStatusBar"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbEnableNotificationPanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnEnableNotificationPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onEnableNotificationPanel"
+                    android:text="enableNotificationPanel"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbEnableBluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnEnableBluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onEnableBluetooth"
+                    android:text="enableBluetooth"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etSetAppWhiteList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input App Package Name,Separated by ;" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Example：com.sm.a;com.sm.b;com.sm.c" />
+
+                <Button
+                    android:id="@+id/btnSetAppWhiteList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSetAppWhiteList"
+                    android:text="setAppWhiteList"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGetAppWhiteList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onGetAppWhiteList"
+                android:text="getAppWhiteList"
+                android:textAllCaps="false" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etSetSimcardDataEnabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Input Sim Card subId" />
+
+                    <CheckBox
+                        android:id="@+id/cbSetSimcardDataEnabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="show" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSetSimcardDataEnabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSetSimcardDataEnabled"
+                    android:text="setSimcardDataEnabled"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etSetBootAnimation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input Boot Animation Path" />
+
+                <Button
+                    android:id="@+id/btnSetBootAnimation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSetBootAnimation"
+                    android:text="setBootAnimation"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/purple_500" />
+
+                <CheckBox
+                    android:id="@+id/cbShowNavigationBarBackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnShowNavigationBarBackButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onShowNavigationBarBackButton"
+                    android:text="showNavigationBarBackButton"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/purple_500" />
+
+                <CheckBox
+                    android:id="@+id/cbShowNavigationBarHomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnShowNavigationBarHomeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onShowNavigationBarHomeButton"
+                    android:text="showNavigationBarHomeButton"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/purple_500" />
+
+                <CheckBox
+                    android:id="@+id/cbShowNavigationBarRecentsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnShowNavigationBarRecentsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onShowNavigationBarRecentsButton"
+                    android:text="showNavigationBarRecentsButton"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/purple_500" />
+
+                <CheckBox
+                    android:id="@+id/cbShowNotificationPanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnShowNotificationPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onShowNotificationPanel"
+                    android:text="showNotificationPanel"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/purple_500" />
+
+                <CheckBox
+                    android:id="@+id/cbShowNavigationBarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnShowNavigationBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onShowNavigationBar"
+                    android:text="showNavigationBar"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/purple_500" />
+
+                <CheckBox
+                    android:id="@+id/cbShowStatusBarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="show" />
+
+                <Button
+                    android:id="@+id/btnShowStatusBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onShowStatusBar"
+                    android:text="showStatusBar"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/purple_500" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_install_cert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="onInstallCert"
+            android:text="安装证书"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llNewRoot" />
+
+        <Button
+            android:id="@+id/btn_back_cert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="onBackCert"
+            android:text="回退证书"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_install_cert" />
+
+        <Button
+            android:id="@+id/btn_reboot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reboot"
+            android:text="3.2.3.2 REBOOT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_back_cert" />
+
+
+        <Button
+            android:id="@+id/btn_shutdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="shutDown"
+            android:text="3.2.3.3 power off"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_reboot" />
+
+        <Button
+            android:id="@+id/btn_TimeZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="timeZone"
+            android:text="3.2.3.4 TimeZone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_shutdown" />
+
+        <Button
+            android:id="@+id/btn_factory_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="factoryReset"
+            android:text="3.2.3.5 factory_reset"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_TimeZone" />
+
+        <Button
+            android:id="@+id/btn_reset_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetApp"
+            android:text="3.2.3.6 reset_app"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_factory_reset" />
+
+        <Button
+            android:id="@+id/btn_device_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deviceInfo"
+            android:text="3.3 DEVICE INFO"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_reset_app" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_install_apk_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusable="false"
+            android:hint="select apk path"
+            android:onClick="chooseFile"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_install_app"
+            app:layout_constraintEnd_toStartOf="@+id/btn_install_app"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_install_app" />
+
+        <Button
+            android:id="@+id/btn_install_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="install"
+            android:text="3.4 INSTALL APP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_device_info" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_uninstall_package_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="package name"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_uninstall_app"
+            app:layout_constraintEnd_toStartOf="@+id/btn_uninstall_app"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_install_apk_path" />
+
+        <Button
+            android:id="@+id/btn_uninstall_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="unInstall"
+            android:text="3.4 UNINSTALL APP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_install_apk_path" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/update_system_path_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="choose_update_system_path"
+            android:onClick="chooseFile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_uninstall_app" />
+
+        <Button
+            android:id="@+id/btn_update_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="updateSystem"
+            android:text="3.5.3.1 UPDATE SYSTEM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/update_system_path_et" />
+
+        <Button
+            android:id="@+id/btn_read_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="readHost"
+            android:text="Read host"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_update_system" />
+
+        <Button
+            android:id="@+id/btn_write_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="writeHost"
+            android:text="Write host"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_read_host" />
+
+        <Button
+            android:id="@+id/btn_delete_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deleteHost"
+            android:text="Delete host"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_write_host" />
+
+        <Button
+            android:id="@+id/btn_gms_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enableGoogleMobileServices"
+            android:text="3.5.3.2 GMS"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_delete_host" />
+
+
+        <Button
+            android:id="@+id/btn_status_bar_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enableStatusBar"
+            android:text="3.6.3.1 STATUS BAR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_gms_enable" />
+
+        <Button
+            android:id="@+id/btn_navigation_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enableNavigationBar"
+            android:text="3.6.3.2 NAVIGATION BAR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_status_bar_enable" />
+
+        <Button
+            android:id="@+id/btn_enable_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enableNotification"
+            android:text="3.6.3.3 NOTICE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_navigation_enable" />
+
+        <Button
+            android:id="@+id/btn_lock_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enableLockScreen"
+            android:text="3.6.3.4 LOCK SCREEN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_enable_notification" />
+
+        <Button
+            android:id="@+id/btn_power_lock_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enablePowerLockScreen"
+            android:text="3.6.3.5 power LOCK SCREEN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_lock_screen" />
+
+
+        <Button
+            android:id="@+id/btn_kiosk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enableKioskMode"
+            android:text="3.7.3.1 KIOSK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_power_lock_screen" />
+
+        <Button
+            android:id="@+id/btn_kiosk_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setKioskAccounts"
+            android:text="3.7.3.2 KIOSK ACCOUNT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_kiosk" />
+
+        <Button
+            android:id="@+id/btn_net_conn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getConnectionInfo"
+            android:text="3.8.3.1 NET CONN INFO"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_kiosk_account" />
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getLocation"
+            android:text="3.8.3.2 LOCATION"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_net_conn_info" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="locationInfo"
+            app:layout_constraintBaseline_toBaselineOf="@id/btn_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_location"
+            app:layout_constraintTop_toBottomOf="@id/btn_net_conn_info" />
+
+
+        <Button
+            android:id="@+id/btn_device_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getDeviceStatus"
+            android:text="3.8.3.3 DEVICE STATUS"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_location" />
+
+        <Button
+            android:id="@+id/btn_using_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getDeviceUsingData"
+            android:text="3.8.3.4 USING DATA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_device_status" />
+
+
+        <View
+            android:id="@+id/line_view_5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_using_data" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/update_certificate_path_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="choose_update_certificate_path"
+            android:onClick="chooseFile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_view_5" />
+
+        <Button
+            android:id="@+id/btn_add_c1_cert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addC1"
+            android:text="3.9.3.1 updateCertificate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/update_certificate_path_et" />
+
+        <View
+            android:id="@+id/line_view_6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_c1_cert" />
+
+
+        <Button
+            android:id="@+id/btn_get_certificate_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getCertificateInfo"
+            android:text="3.9.3.2 getCertificateInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_view_6" />
+
+
+        <Button
+            android:id="@+id/btn_get_certificate_chain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getCertificateChain"
+            android:text="@string/text_btn_get_certificate_chain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_certificate_info" />
+
+
+        <Button
+            android:id="@+id/btn_add_c2_cert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addC2"
+            android:text="@string/text_btn_add_c2_cert"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/btn_add_c1_cert"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_c1_cert" />
+
+        <Button
+            android:id="@+id/btn_add_c2_cert_sub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addC2Sub1"
+            android:text="@string/text_btn_add_c2_sub1_cert"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/btn_add_c1_cert"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_c2_cert" />
+
+        <Button
+            android:id="@+id/btn_add_c2_cert_sub2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addC2Sub2"
+            android:text="@string/text_btn_add_c2_sub2_cert"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/btn_add_c1_cert"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_c2_cert_sub1" />
+
+        <Button
+            android:id="@+id/btn_add_c2_cert_sub3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addC2Sub3"
+            android:text="@string/text_btn_add_c2_sub3_cert"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/btn_add_c1_cert"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_c2_cert_sub2" />
+
+        <Button
+            android:id="@+id/btn_add_c2_cert_sub4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addC2Sub4"
+            android:text="@string/text_btn_add_c2_sub4_cert"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/btn_add_c1_cert"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_c2_cert_sub3" />
+
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_certificate_chain" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_slot_index"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:focusedByDefault="false"
+            android:hint="3.10.3.1 slot index,for example 0 or 1"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_view" />
+
+        <Button
+            android:id="@+id/btn_data_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testEnableMobileNetwork"
+            android:text="Turn on Mobile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_slot_index" />
+
+        <Button
+            android:id="@+id/btn_data_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:onClick="testDisableMobileNetwork"
+            android:text="Turn off Mobile"
+            app:layout_constraintStart_toEndOf="@id/btn_data_enable"
+            app:layout_constraintTop_toBottomOf="@id/et_slot_index" />
+
+        <View
+            android:id="@+id/line_view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_data_disable" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_check_apn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="apnInfo format is name,apn for example CMNET,cmnet"
+            android:text="CMNET,cmnet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_view1" />
+
+        <Button
+            android:id="@+id/btn_check_apn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testCheckAPN"
+            android:text="3.10.3.2 CHECK APN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_check_apn" />
+
+        <View
+            android:id="@+id/line_view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_check_apn" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_set_apn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="ApnId,for example 1551"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_view2" />
+
+        <Button
+            android:id="@+id/btn_set_apn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testSetAPN"
+            android:text="3.10.3.3 SET APN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_set_apn" />
+
+        <View
+            android:id="@+id/line_view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_set_apn" />
+
+
+        <Button
+            android:id="@+id/btn_add_apn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testAddAPN"
+            android:text="3.10.3.4 ADD APN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_view3" />
+
+        <Button
+            android:id="@+id/btn_get_apn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getAPNList"
+            android:text="3.10.3.5 APNListInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_apn" />
+
+        <View
+            android:id="@+id/line_view_7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_apn_list" />
+
+        <TextView
+            android:id="@+id/tv_apn_slot_index_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slot_index"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_get_current_apn"
+            app:layout_constraintEnd_toStartOf="@+id/sp_apn_slot_index"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_view_7" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_apn_slot_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:entries="@array/apn_slot_index"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_get_current_apn"
+            app:layout_constraintEnd_toStartOf="@+id/btn_get_current_apn"
+            app:layout_constraintStart_toEndOf="@+id/tv_apn_slot_index_label"
+            app:layout_constraintTop_toBottomOf="@+id/line_view_7" />
+
+        <Button
+            android:id="@+id/btn_get_current_apn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:onClick="getCurrentAPN"
+            android:text="@string/get_current_apn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sp_apn_slot_index"
+            app:layout_constraintTop_toBottomOf="@+id/line_view_7" />
+
+
+        <View
+            android:id="@+id/line_view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_current_apn" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_res_pack_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="/sdcard/Download/update.zip"
+            android:onClick="chooseFile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_view4" />
+
+        <Button
+            android:id="@+id/btn_update_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="updateResPack"
+            android:text="3.11.3.1 update_res_pack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_res_pack_path" />
+
+        <View
+            android:id="@+id/line_view5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_update_res" />
+
+
+        <Button
+            android:id="@+id/btn_get_res_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getResVer"
+            android:text="3.11.3.2 Get Res Ver"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_view5" />
+
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="完成\n\n\n其他，可选"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_res_ver" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_delay_wake_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="Delay wake up, mills, minimum 1000"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_end" />
+
+        <Button
+            android:id="@+id/btn_to_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toSleep"
+            android:text="@string/text_btn_to_sleep"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_delay_wake_up" />
+
+        <Button
+            android:id="@+id/btn_to_api_3m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toAPI3Month"
+            android:text="@string/text_btn_to_3m_api"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_to_sleep" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

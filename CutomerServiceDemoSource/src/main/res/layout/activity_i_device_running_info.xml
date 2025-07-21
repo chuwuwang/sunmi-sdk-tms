@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IDeviceRunningInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_get_connection_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getConnectionInfo"
+                android:text="getConnectionInfo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_g_p_s_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getGPSLocation"
+                android:text="getGPSLocation"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_device_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDeviceStatus"
+                android:text="getDeviceStatus"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_device_using_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDeviceUsingData"
+                android:text="getDeviceUsingData"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryCapacity"
+                android:text="getBatteryCapacity"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_cpu_usage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCpuUsage"
+                android:text="getCpuUsage"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_charging"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isCharging"
+                android:text="isCharging"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_get_g_p_s_location_with_timeout_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="timeout" />
+
+            <Button
+                android:id="@+id/bt_get_g_p_s_location_with_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getGPSLocationWithTimeout"
+                android:text="getGPSLocationWithTimeout"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_network_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getNetworkLocation"
+                android:text="getNetworkLocation"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_ram_total_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getRamTotalSize"
+                android:text="getRamTotalSize"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_ram_used_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getRamUsedSize"
+                android:text="getRamUsedSize"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_rom_total_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getRomTotalSize"
+                android:text="getRomTotalSize"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_rom_used_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getRomUsedSize"
+                android:text="getRomUsedSize"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_level_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryLevelPercentage"
+                android:text="getBatteryLevelPercentage"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryHealth"
+                android:text="getBatteryHealth"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_current_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryCurrentCapacity"
+                android:text="getBatteryCurrentCapacity"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_current_electricity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryCurrentElectricity"
+                android:text="getBatteryCurrentElectricity"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_charge_cycles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryChargeCycles"
+                android:text="getBatteryChargeCycles"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_cpu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCpuName"
+                android:text="getCpuName"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_turn_on_mills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getTurnOnMills"
+                android:text="getTurnOnMills"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_cpu_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCpuTemperature"
+                android:text="getCpuTemperature"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_cpu_sleep_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCpuSleepInfo"
+                android:text="getCpuSleepInfo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_device_units"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getDeviceUnits"
+                android:text="getDeviceUnits"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_foreground_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getForegroundPackage"
+                android:text="getForegroundPackage"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_mainboard_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMainboardTemperature"
+                android:text="getMainboardTemperature"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryTemperature"
+                android:text="getBatteryTemperature"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_battery_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getBatteryState"
+                android:text="getBatteryState"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_cpu_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getCpuModel"
+                android:text="getCpuModel"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

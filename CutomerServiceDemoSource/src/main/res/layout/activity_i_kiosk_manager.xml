@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunmi.tmsservice.autodemo.IKioskManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_enable_kiosk_function_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="flag" />
+
+            <Button
+                android:id="@+id/bt_enable_kiosk_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enableKioskFunction"
+                android:text="enableKioskFunction"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_is_kiosk_function_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isKioskFunctionEnabled"
+                android:text="isKioskFunctionEnabled"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_kiosk_mode_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getKioskModeStatus"
+                android:text="getKioskModeStatus"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_add_app_to_kiosk_list_package_names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageNames" />
+
+            <Button
+                android:id="@+id/bt_add_app_to_kiosk_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addAppToKioskList"
+                android:text="addAppToKioskList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_remove_app_from_kiosk_list_package_names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageNames" />
+
+            <Button
+                android:id="@+id/bt_remove_app_from_kiosk_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="removeAppFromKioskList"
+                android:text="removeAppFromKioskList"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_get_kiosk_app_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getKioskAppList"
+                android:text="getKioskAppList"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_is_Kiosk_App_package_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="packageName" />
+
+            <Button
+                android:id="@+id/bt_is_Kiosk_App"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="isKioskApp"
+                android:text="isKioskApp"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/et_set_kiosk_pwd_by_type_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type" />
+
+            <EditText
+                android:id="@+id/et_set_kiosk_pwd_by_type_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="psw" />
+
+            <Button
+                android:id="@+id/bt_set_kiosk_pwd_by_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setKioskPwdByType"
+                android:text="setKioskPwdByType"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
