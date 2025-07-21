@@ -1,2 +1,2 @@
 # sunmi-sdk-tms
-SUNMI SDK for public TMS
+SUNMI SDK demo for public TMS.
