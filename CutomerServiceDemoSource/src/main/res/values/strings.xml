@@ -1,5 +1,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">ApiDemo</string>
+
+    <string name="app_name">TMS Demo</string>
+
     <string name="res_pack_path">res pack absolute path</string>
     <string name="text_btn_update_res_pack">updateResPack</string>
     <string name="text_btn_get_certificate_info">getCertificateInfo</string>
